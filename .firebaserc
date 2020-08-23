@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "javillesca-36266": {
+      "hosting": {
+        "clientServiceChat": [
+          "javillesca-36266"
+        ]
+      }
+    }
+  }
+}

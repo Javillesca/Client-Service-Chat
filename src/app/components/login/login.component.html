@@ -1,0 +1,27 @@
+<div>
+    <button *ngIf="!show" type="button" class="btn btn-outline-primary btn-circle-open" (click)="showChat()">
+        <i class="fas fa-info"></i>
+    </button>
+    <div *ngIf="show" class="chat-window chat-float">
+        <div class="title row">
+            <h2>Informate</h2>
+
+            <div class="headerButtons col-md-15">
+                <button type="button" class="btn btn-outline-primary btn-circle-close" (click)="showChat()">-</button>
+            </div>
+        </div>
+        <hr>
+        <div class="app-message">
+
+            <div class="text-center">
+                <p> Inicie sesión para poder contactar </p>
+                <button type="button" class="btn btn-outline-primary" (click)="login('google')">
+                    <i class="fab fa-google"></i>oogle
+                </button>
+                <button type="button" class="btn btn-outline-primary" (click)="login('twitter')">
+                    <i class="fab fa-twitter"></i>Twitter
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

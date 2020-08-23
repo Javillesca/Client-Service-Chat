@@ -1,0 +1,68 @@
+.chat-window {
+    width: 300px;
+    height: 400px;
+    border: 1px solid #4080FF;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+.chat-float {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    background-color: #ffffff;
+    padding: 5px 10px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    transition: all 300ms ease 0ms;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+}
+
+.title {
+    padding-top: 10px;
+    margin-left: 10px;
+}
+
+.headerButtons {
+    margin: auto;
+}
+
+.app-message {
+    overflow-y: scroll;
+    height: 60%;
+    /* background:gray; */
+    padding: 5px;
+}
+
+.btn-circle-open {
+    width: 50px;
+    height: 50px;
+    padding: 6px 0px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    transition: all 300ms ease 0ms;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+}
+
+.btn-circle-close {
+    margin-right: 5px;
+    width: 40px;
+    height: 40px;
+    padding: 6px 0px;
+    border-radius: 30px;
+    font-size: 12px;
+    transition: all 300ms ease 0ms;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+}

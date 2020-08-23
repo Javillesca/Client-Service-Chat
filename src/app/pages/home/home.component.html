@@ -1,0 +1,6 @@
+<header>
+    <h1>Client Service Chat</h1>
+</header>
+
+<app-login *ngIf="!cs.user.uid"></app-login>
+<app-chat *ngIf="cs.user.uid"></app-chat>

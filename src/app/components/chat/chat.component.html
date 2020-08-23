@@ -1,0 +1,38 @@
+<div>
+    <button *ngIf="!show" type="button" class="btn btn-outline-primary btn-circle-open" (click)="showChat()">
+        <i class="fas fa-info"></i>
+    </button>
+    <div *ngIf="show" class="chat-window chat-float">
+        <div class="title row">
+            <h2>Contacta</h2>
+
+            <div class="headerButtons col-md-15">
+                <button type="button" class="btn btn-outline-primary btn-circle-close" (click)="showChat()">-</button>
+                <button type="button" (click)="cs.logout()" class="btn btn-outline-danger">
+                    <i class="fas fa-power-off"></i>
+                </button>
+
+            </div>
+        </div>
+        <hr>
+        <div id="app-message" class="app-message">
+            <div [ngClass]="{ 'text-right': cs.user.uid === chat.uid }" *ngFor="let chat of cs.chats">
+                <span class="badge" [ngClass]="{ 'badge-success': cs.user.uid === chat.uid,
+                                                   'badge-primary': cs.user.uid !== chat.uid }">{{ chat.name }}</span>
+                <p> {{ chat.message }} </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-9">
+                <input type="text" name="message" class="form-control" [(ngModel)]="message" (keyup.enter)="sendMessage()" placeholder="Enviar">
+            </div>
+            <div class="col-1">
+                <button class="btn btn-outline-primary" (click)="sendMessage()">
+                    <i class="fas fa-greater-than"></i>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+</div>
